@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F5E8D7">
+<title>Бронь оплачена — эфир Насти Шумиловой</title>
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<main>
+  <div class="ok-mark" aria-hidden="true">✓</div>
+  <h1>Бронь оплачена ❤️</h1>
+  <p class="caption">Напишите Насте слово «бронь», чтобы менеджер увидел оплату</p>
+  <div class="btns">
+    <a class="btn js-tg" href="#" rel="noopener">Написать в Telegram</a>
+    <a class="btn btn--dark js-vk" href="#" rel="noopener">Написать во ВКонтакте</a>
+  </div>
+</main>
+<footer>
+  <a class="js-policy" href="#" target="_blank" rel="noopener">Политика обработки персональных данных</a><span>·</span><a class="js-consent" href="#" target="_blank" rel="noopener">Согласие на обработку персональных данных</a>
+</footer>
+<script>
+(function () {
+  function setHref(sel, url) { document.querySelectorAll(sel).forEach(function (a) { a.href = url; }); }
+  setHref(".js-tg", TG_BRON);
+  setHref(".js-vk", VK_BRON);
+  setHref(".js-policy", POLICY_URL);
+  setHref(".js-consent", CONSENT_URL);
+})();
+</script>
+</body>
+</html>
